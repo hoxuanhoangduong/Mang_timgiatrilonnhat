@@ -6,15 +6,16 @@
 </head>
 <body>
 <script>
-    let value = parseInt(prompt('Enter a number : '));
     let x = [1, 2, 34, 66, 86, 23, 552, 23, 0, 0, 22];
+    let max = x[0];
+    let index = 0;
     for (let i = 0; i < x.length; i++) {
-        if (value == x[i]) {
-            alert("Value " + value + " at " + i);
-        } else {
-            alert("Value doesn't exist");
+        if (x[i] > max) {
+            max = x[i];
+            index = i;
         }
     }
+    alert("Max : " + max + " at posision : " + index);
 </script>
 </body>
 </html>
